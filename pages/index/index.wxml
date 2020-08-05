@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <button bindtap="takePhoto">Take Photo</button>
+  <button bindtap="previewMyImage">Preview Images</button>
+  <button bindtap="getLocation">Get Location</button>
+  <button open-type="openSetting">Open Setting</button>
+  <button bindtap="getQRCode">Get QRCode</button>
+  <image wx:if="{{imageURL}}" src="{{imageURL}}" mode="aspectFit"></image>
+</view>
